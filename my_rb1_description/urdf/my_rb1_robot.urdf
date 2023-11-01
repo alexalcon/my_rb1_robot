@@ -1,6 +1,51 @@
 <?xml version="1.0"?>
 <robot name="rb1_robot">    
     <!-- *************************************************** -->
+    <!-- GAZEBO TAGS -->
+    <!-- Gazebo tags - Links material-->
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Grey</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Grey</material>
+        <mu1>1</mu1>
+        <mu2>1</mu2>
+    </gazebo>
+    <gazebo reference="back_caster">
+        <material>Gazebo/Orange</material>
+        <mu1>0</mu1>
+        <mu2>0</mu2>
+    </gazebo>
+    <gazebo reference="front_caster">
+        <material>Gazebo/Orange</material>
+        <mu1>0</mu1>
+        <mu2>0</mu2>
+    </gazebo>
+    <gazebo reference="joint_base_link_front_laser">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+    <gazebo reference="front_laser">
+        <material>Gazebo/DarkGrey</material>
+    </gazebo>
+
+    <!-- Gazebo tags - preserveFixedJoint-->
+    <gazebo reference="joint_base_link_back_caster">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+    <gazebo reference="joint_base_link_front_caster">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+    <gazebo reference="joint_base_link_front_laser">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+    <!-- *************************************************** -->
+
+    <!-- *************************************************** -->
     <!-- ROBOT MODEL -->
     <!-- Link - base_link -->
     <link name="base_link">
